@@ -4,18 +4,55 @@
   --main-hero-background-color: #2f303a;
 }
 
+html {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
 }
 
 /* -----------HEADER---------- */
 
+.header {
+  background-color: #ffffff;
+}
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-studio {
@@ -52,24 +89,31 @@ body {
   color: #2196f3;
 }
 /* -----------HERO---------- */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
 .hero,
 footer {
   background-color: var(--main-hero-background-color);
 }
-.visually-hidden { 
-  position: absolute; 
-  width: 1px; 
-  height: 1px; 
-  margin: -1px; 
-  border: 0; 
-  padding: 0; 
-  white-space: nowrap; 
-  clip-path: inset(100%); 
-  clip: rect(0 0 0 0); 
-  overflow: hidden; 
-} 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .hero-title {
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -77,16 +121,22 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
+  max-width: 696px;
 }
+
 .hero-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
+  background-color: #2196f3;
 }
 button {
+  display: inline-block;
   font-family: inherit;
+  padding: 10px 32px;
 }
 
 /* ----конкурентные примущества -----*/
@@ -95,8 +145,10 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  max-width: 270px;
   color: var(--main-after-title-color);
 }
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -104,6 +156,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 10px;
 }
 
 /* ----примеры работ---- */
@@ -114,6 +167,7 @@ button {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
   color: var(--main-title-color);
 }
 
@@ -125,6 +179,7 @@ button {
   line-height: 1, 17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
   color: var(--main-title-color);
 }
 
@@ -134,6 +189,7 @@ button {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   color: var(--main-title-color);
 }
 .team-after-title {
@@ -142,7 +198,13 @@ button {
   letter-spacing: 0.03em;
   color: var(--main-after-title-color);
 }
+.team-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* ----footer---- */
+
 .footer-adress {
   font-style: normal;
   font-weight: 400;
@@ -208,4 +270,16 @@ button {
 }
 .portfolio-btn:hover {
   color: #ffffff;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-not {
+  padding-bottom: 94px;
+}
+.footer-logo {
+  padding-top: 60px;
+  display: inline-block;
 }
