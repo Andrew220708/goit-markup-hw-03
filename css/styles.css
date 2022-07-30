@@ -42,6 +42,11 @@ body {
 
 /* -----------HEADER---------- */
 
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background-color: #ffffff;
 }
@@ -53,6 +58,7 @@ body {
   letter-spacing: 0.03em;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .logo-studio {
@@ -65,25 +71,38 @@ body {
   list-style: none;
 }
 
+.header-list {
+  display: flex;
+}
 .link {
   text-decoration: none;
 }
 
+.header-list-contact {
+  display: flex;
+  margin-left: auto;
+}
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: #212121;
 }
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-
   color: #757575;
+}
+
+.header-item-tel {
+  margin-left: 50px;
 }
 .header-link:hover {
   color: #2196f3;
@@ -132,6 +151,8 @@ footer {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
+  min-width: 216px;
+  height: 50px;
 }
 button {
   display: inline-block;
@@ -140,6 +161,11 @@ button {
 }
 
 /* ----конкурентные примущества -----*/
+
+.features-list {
+  display: flex;
+  gap: 30px;
+}
 
 .features-after-title {
   font-size: 14px;
@@ -170,9 +196,19 @@ button {
   margin-bottom: 50px;
   color: var(--main-title-color);
 }
-
+.work-list {
+  display: flex;
+  gap: 30px;
+}
 /* -----команда работников----- */
 
+.tean-item {
+  width: calc((100%-90px) / 4);
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+}
 .team--title {
   font-weight: 700;
   font-size: 36px;
@@ -212,6 +248,8 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
+  display: inline-block;
 }
 .footer-link {
   font-style: normal;
@@ -220,6 +258,8 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+  display: inline-block;
 }
 .footer-tel {
   font-family: "Roboto";
@@ -229,6 +269,8 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-weight: 700;
@@ -249,6 +291,25 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-item-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.picture {
+  gap: 30px;
 }
 
 /* -----картинки----- */
@@ -281,5 +342,6 @@ button {
 }
 .footer-logo {
   padding-top: 60px;
+  margin-bottom: 20px;
   display: inline-block;
 }
