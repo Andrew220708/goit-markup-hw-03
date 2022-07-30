@@ -312,6 +312,9 @@ button {
   gap: 30px;
 }
 
+.pictures {
+  flex-basis: calc(100% / 3 - 30px);
+}
 /* -----картинки----- */
 
 .portfolio-title {
