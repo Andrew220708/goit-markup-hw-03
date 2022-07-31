@@ -166,12 +166,13 @@ button {
   display: flex;
   gap: 30px;
 }
-
+.features-pre-title {
+  max-width: 270px;
+}
 .features-after-title {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  max-width: 270px;
   color: var(--main-after-title-color);
 }
 
@@ -201,7 +202,9 @@ button {
   gap: 30px;
 }
 /* -----команда работников----- */
-
+.team {
+  background-color: #f5f4fa;
+}
 .tean-item {
   width: calc((100%-90px) / 4);
 }
@@ -248,7 +251,6 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-bottom: 9px;
   display: inline-block;
 }
 .footer-link {
@@ -258,9 +260,12 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
   display: inline-block;
 }
+.footer-item {
+  margin-bottom: 9px;
+}
+
 .footer-tel {
   font-family: "Roboto";
   font-style: normal;
@@ -270,7 +275,6 @@ button {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
-  padding-bottom: 60px;
 }
 .footer-logo {
   font-weight: 700;
@@ -282,6 +286,15 @@ button {
   color: #ffffff;
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
 /* -----Портфолио------ */
 
 .portfolio-btn {
@@ -291,8 +304,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  display: flex;
-  align-items: center;
+  border: none;
 }
 
 .portfolio-item-btn:not(:last-child) {
@@ -308,13 +320,7 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
-.picture {
-  gap: 30px;
-}
 
-.pictures {
-  flex-basis: calc(100% / 3 - 30px);
-}
 /* -----картинки----- */
 
 .portfolio-title {
@@ -324,7 +330,17 @@ button {
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
-
+.picture {
+  gap: 30px;
+}
+.pictures {
+  flex-basis: calc(100% / 3 - 30px);
+}
+.portfolio-work {
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
 .portfolio-after-title {
   font-weight: 400;
   font-size: 16px;
@@ -342,9 +358,4 @@ button {
 }
 .section-not {
   padding-bottom: 94px;
-}
-.footer-logo {
-  padding-top: 60px;
-  margin-bottom: 20px;
-  display: inline-block;
 }
